@@ -6,7 +6,6 @@ function App() {
   return (
     <Fragment>
       <Header />
-
       <div className='container mt-5'>
         <div className='row'>
           <Form />
