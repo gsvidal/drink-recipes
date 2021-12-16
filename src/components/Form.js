@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CategoriesContext } from "../context/CategoriesContext";
 
 const Form = () => {
+
+  const { categories } = useContext(CategoriesContext);
+
   return(
     <form 
       action=""
@@ -10,7 +14,7 @@ const Form = () => {
         <legend>Search drinks by category or ingredient</legend>
       </fieldset>
 
-      <div className="row">
+      <div className="row mt-4">
         <div className="col-md-4">
           <input 
             type="text"
@@ -27,6 +31,14 @@ const Form = () => {
             id=""
           >
             <option value="">--Select category--</option>
+            {categories.map(category => (
+              <option 
+                key={category.strCategory} 
+                value=""
+              >
+                {category.strCategory}
+              </option>
+            ))}
           </select>
         </div>
         <div className="col-md-4">
