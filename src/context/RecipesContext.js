@@ -27,8 +27,6 @@ const RecipesProvider = (props) => {
       const fetchAPI = async () => {
         const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredient}&c=${cat}`;
         const data = await axios.get(url);
-        // console.log(url);
-        // console.log(data.data.drinks);
         setRecipes(data.data.drinks);
       }
       fetchAPI();
@@ -39,6 +37,7 @@ const RecipesProvider = (props) => {
   return(
     <RecipesContext.Provider
       value={{
+        recipes,
         setSearchRecipes,
         setQuery
       }}
