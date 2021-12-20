@@ -1,3 +1,20 @@
+# Drink Recipes App
+<a href="https://www.gonzalovidal.dev/drink-recipes/">
+  <img src="https://i.postimg.cc/mk4rDLKh/drink-recipes.png">
+</a>
+
+A React App where you can search for a drink by main ingredient and category.
+
+## Technologies & Features:
+
+- Styles with Bootstrap.
+
+- Context API & useContext Hook.
+
+- React Modal with Material UI.
+
+<hr />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
