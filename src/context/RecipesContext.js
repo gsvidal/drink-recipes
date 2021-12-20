@@ -14,7 +14,6 @@ const RecipesProvider = (props) => {
 
   const { ingredient, category } = searchRecipes;
 
-  // console.log(category);
   let cat;
   if(category.split(" ").length <= 2) {
   cat = category.split(" ").join("_");
@@ -32,7 +31,7 @@ const RecipesProvider = (props) => {
       fetchAPI();
     }
     
-  }, [searchRecipes])
+  }, [searchRecipes, cat, ingredient, query])
 
   return(
     <RecipesContext.Provider

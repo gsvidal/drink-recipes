@@ -21,7 +21,6 @@ const Form = () => {
       [event.target.name]: event.target.value
     })
   }
-  // console.log(search)
 
   return(
     <form 
@@ -69,7 +68,7 @@ const Form = () => {
         </div>
         <div className="col-md-4">
           <button 
-            className="btn btn-block btn-primary"
+            className="btn btn-block btn-outline-info"
           >
             Search drinks
           </button>
